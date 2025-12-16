@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mafia Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mafia Game</h1>
+  <div id="login">
+    <input type="text" id="username" placeholder="Ismingiz">
+    <button id="joinBtn">Kirish</button>
+  </div>
+  <div id="game" style="display:none;">
+    <h2 id="role"></h2>
+    <ul id="playersList"></ul>
+    <input type="text" id="voteInput" placeholder="Kimni chiqarish?">
+    <button id="voteBtn">Vote</button>
+    <div id="chat"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
