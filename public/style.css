@@ -1,0 +1,129 @@
+/* umumiy fon va font */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sarlavha */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Login paneli */
+#login {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+#login button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login button:hover {
+    background: #ff3b2f;
+}
+
+/* O‘yin oynasi */
+#game {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Playerlar ro‘yxati */
+#playersList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#playersList li {
+    padding: 8px;
+    margin-bottom: 5px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Role ko‘rsatish */
+#role {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ff6f61;
+}
+
+/* Vote input va button */
+#voteInput {
+    width: 70%;
+    padding: 8px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#voteBtn {
+    padding: 8px 15px;
+    background: #6a5acd;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+#voteBtn:hover {
+    background: #483d8b;
+}
+
+/* Chat oynasi */
+#chat {
+    margin-top: 20px;
+    height: 150px;
+    overflow-y: auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fdfdfd;
+}
+
+/* Responsive telefon ekrani uchun */
+@media (max-width: 500px) {
+    #login input, #voteInput {
+        width: 90%;
+    }
+
+    #game {
+        width: 95%;
+        padding: 15px;
+    }
+}
